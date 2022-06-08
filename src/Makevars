@@ -4,5 +4,6 @@
 ifdef CPPAD_DIR
 PKG_CPPFLAGS=-I$(CPPAD_DIR)/include  -I../inst/include/ -DNDEBUG -Wno-unused-variable
 else
-PKG_CPPFLAGS=-I/opt/cppad/include  -I../inst/include/ -DNDEBUG -Wno-unused-variable
+## PKG_CPPFLAGS=-I/opt/cppad/include  -I../inst/include/ -DNDEBUG -Wno-unused-variable
+PKG_CPPFLAGS=-I"C:/cppad/include"  -I../inst/include/ -DNDEBUG -Wno-unused-variable
 endif
